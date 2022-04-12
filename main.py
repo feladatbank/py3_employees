@@ -42,6 +42,8 @@ ____________________________________________________________________
 
 
 """
+#Britanney Cummings;$55486;1993;Romania
+#1
 
 class Munkatársak:
   def __init__(self,sor):
@@ -53,3 +55,9 @@ class Munkatársak:
 
 with open("employees.txt","r",encoding="latin2") as f:
   lista = [Munkatársak(sor) for sor in f]
+
+#2
+
+print("3.feladat:")
+print(f"3.2: a cégnél {len(lista)} programozó dolgozik!")
+
