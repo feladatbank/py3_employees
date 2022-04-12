@@ -43,4 +43,11 @@ ____________________________________________________________________
 
 """
 
+class Munkatársak:
+  def __init__(self,sor):
+    nev,jovedelem,szuletes,helyileg_hol = sor.strip().split(";")
+    self.nev = nev
+    self.jovedelem = jovedelem.replace('$', '')
+    self.szuletes = int(szuletes)
+    self.helyileg_hol = helyileg_hol
 
