@@ -51,3 +51,5 @@ class Munkatársak:
     self.szuletes = int(szuletes)
     self.helyileg_hol = helyileg_hol
 
+with open("employees.txt","r",encoding="latin2") as f:
+  lista = [Munkatársak(sor) for sor in f]
