@@ -61,3 +61,12 @@ with open("employees.txt","r",encoding="latin2") as f:
 print("3.feladat:")
 print(f"3.2: a cégnél {len(lista)} programozó dolgozik!")
 
+#3
+
+jovedelmek = [int(sor.jovedelem) for sor in lista]
+ossz = sum(jovedelmek)
+atlag = ossz / len(jovedelmek)
+
+print(f"3.3: az alkalmazottak havi átlag jövedelme: ${atlag:.1f}")
+
+#4
